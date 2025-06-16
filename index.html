@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar Angola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+       <a href="index.html"> <h1 class="logot">Bazar Angola</h1> </a> 
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li>
+                    <a href="carrinho.html" class="carrinho-link">
+                        🛒 Carrinho 
+                        <span id="contador-carrinho" class="contador">0</span>
+                    </a>
+                </li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+        <input type="text" class="barra-pesquisa" placeholder="Buscar produtos...">
+    </header>
+
+    <main>
+        <section class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Imagens/iphone.jfif" alt="Produto 1">
+                    <h3>Iphone 15 Pro Max</h3>
+                    <p>Kz 1.200.000</p>
+                    <button onclick="adicionarAoCarrinho('Iphone 15 Pro Max', 'Kz 1.200.000', 'Imagens/iphone.jfif')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/tv samsung 58.jfif" alt="Produto 2">
+                    <h3>Tv Samsung 58 polegadas</h3>
+                    <p>Kz 375.000</p>
+                    <button onclick="adicionarAoCarrinho('TV Samsung 58 polegadas', 'Kz 375.000', 'Imagens/tv samsung 58.jfif')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/empreendedorismo.jfif" alt="Produto 3">
+                    <h3>Livro de Empreendedorismo</h3>
+                    <p>Kz 7,500</p>
+                    <button onclick="adicionarAoCarrinho('Livro de Empreendedorismo', 'Kz 7,500', 'Imagens/empreendedorismo.jfif')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/fones de ouvido qcy h3.jpg" alt="Produto 4">
+                    <h3>Fones de Ouvido QCY H3</h3>
+                    <p>Kz 45.000</p>
+                    <button onclick="adicionarAoCarrinho('Fones de Ouvido QCY H3', 'Kz 45.000', 'Imagens/fones de ouvido qcy h3.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/kit de arduino.jpg" alt="Produto 5">
+                    <h3>Kit de Arduino</h3>
+                    <p>Kz 39.000</p>
+                    <button onclick="adicionarAoCarrinho('Kit de Arduino', 'Kz 39.000', 'Imagens/Kit de Arduino.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/kit de ferramentas.jpg" alt="Produto 6">
+                    <h3> Kit de Ferramentas</h3>
+                    <p>Kz 25.000</p>
+                    <button onclick="adicionarAoCarrinho('Kit de Ferramentas', 'Kz 25.000', 'Imagens/kit de ferramentas.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/Asus Gamescom.jpg" alt="Produto 7">
+                    <h3>PC ASUS Gamer</h3>
+                    <p>Kz 859.000,99</p>
+                    <button onclick="adicionarAoCarrinho('PC ASUS Gamer', 'Kz 859.000', 'Imagens/Asus Gamescom.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/samsung s24 ultra.jpg" alt="Produto 8">
+                    <h3>Samsung Galaxy S24 Ultra</h3>
+                    <p>Kz 1.256.000</p>
+                    <button onclick="adicionarAoCarrinho('Samsung Galaxy S24 Ultra', 'Kz 1.256.000', 'Imagens/samsung s24 ultra.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/iphone 16.jpg" alt="Produto 9">
+                    <h3>Iphone 16</h3>
+                    <p>Kz 959.000</p>
+                    <button onclick="adicionarAoCarrinho('Iphone 16', 'Kz 959.000', 'Imagens/iphone 16.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/ps5.jpg" alt="Produto 10">
+                    <h3>Play Station 5</h3>
+                    <p>860.000</p>
+                    <button onclick="adicionarAoCarrinho('Play Station 5', 'Kz 860.000', 'Imagens/ps5.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/mac book pro 13.jpg" alt="Produto 11">
+                    <h3>Mac Book Pro 13</h3>
+                    <p>Kz 1.500.000</p>
+                    <button onclick="adicionarAoCarrinho('Mac Book Pro 13', 'Kz 1.500.000', 'Imagens/mac book pro 13.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/lenovo ideapad s145.jpg" alt="Produto 3">
+                    <h3>Lenovo Ideapad S145</h3>
+                    <p>Kz 450.000</p>
+                    <button onclick="adicionarAoCarrinho('Lenovo Ideapad S145', 'Kz 450.000', 'Imagens/lenovo ideapad s145.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/fritadeira eletrica.jpg" alt="Produto 2">
+                    <h3>Fritadeira Eléctrica</h3>
+                    <p>Kz 67.000</p>
+                    <button onclick="adicionarAoCarrinho('Fritadeira Eléctrica', 'Kz 67.000', 'Imagens/fritadeira eletrica.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/fifa.jpg" alt="Produto 2">
+                    <h3>FIFA 2023</h3>
+                    <p>Kz 36.000</p>
+                    <button onclick="adicionarAoCarrinho('FIFA 2023', 'Kz 36.000', 'Imagens/fifa.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/nike sportswear airf force 1.jpg" alt="Produto 2">
+                    <h3>NIKE Sportswear Air Force 1</h3>
+                    <p>Kz 100.000</p>
+                    <button onclick="adicionarAoCarrinho('NIKE Sportswear Air Force 1', 'Kz 100.000', 'Imagens/nike sportswear airf force 1.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/relogio de pulso.jpg" alt="Produto 2">
+                    <h3>Relógio de Pulso</h3>
+                    <p>Kz 37.000</p>
+                    <button onclick="adicionarAoCarrinho('Relógio de Pulso', 'Kz 37.000', 'Imagens/relogio de pulso.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/roter netgear.jpg" alt="Produto 2">
+                    <h3>Router NetGear</h3>
+                    <p>Kz 50.000</p>
+                    <button onclick="adicionarAoCarrinho('Router NetGear', 'Kz 50.000', 'Imagens/roter netgear.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="Imagens/projectora.jpg" alt="Produto 2">
+                    <h3>Projectora</h3>
+                    <p>Kz 75.000</p>
+                    <button onclick="adicionarAoCarrinho('Projectora', 'Kz 75.000', 'Imagens/projectora.jpg')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Mercado Local. Todos os direitos reservados.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

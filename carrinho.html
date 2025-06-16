@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Bazar Angola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><h1>Bazar Angola</h1></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li>
+                    <a href="carrinho.html" class="carrinho-link">
+                        🛒 Carrinho 
+                        <span id="contador-carrinho" class="contador">0</span>
+                    </a>
+                </li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+        <input type="text" class="barra-pesquisa" placeholder="Buscar produtos...">
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <div class="itens-carrinho" id="itens-carrinho">
+                <!-- Itens serão adicionados dinamicamente via JavaScript -->
+                <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+            </div>
+            <div class="total-carrinho">
+                <h3>Total: <span id="total">Kz 0.00</span></h3>
+                <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bazar Angola. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

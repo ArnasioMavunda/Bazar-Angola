@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--  
+    Comentarios
+    teste 1 
+    -->
+</body>
+</html>
+<script>
+    // Função para atualizar o contador do carrinho
+function atualizarContadorCarrinho() {
+    const contador = document.getElementById('contador-carrinho');
+    contador.textContent = carrinho.length;
+}
+
+// Chame esta função sempre que o carrinho for atualizado
+function adicionarAoCarrinho(nome, preco, imagem) {
+    const item = { nome, preco, imagem };
+    carrinho.push(item);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    atualizarContadorCarrinho(); // Atualiza o contador
+    // ... (seu código existente de notificação)
+}
+
+function removerDoCarrinho(index) {
+    carrinho.splice(index, 1);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    atualizarContadorCarrinho(); // Atualiza o contador
+    // ... (seu código existente de notificação)
+}
+
+// Inicialize o contador ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+    atualizarCarrinho();
+    atualizarContadorCarrinho(); // Adicione esta linha
+});
+</script>
