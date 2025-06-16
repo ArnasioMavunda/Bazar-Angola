@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Bazar Angola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Bazar Angola</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li>
+                    <a href="carrinho.html" class="carrinho-link">
+                        🛒 Carrinho 
+                        <span id="contador-carrinho" class="contador">0</span>
+                    </a>
+                </li>
+                <li><a href="vendedores.html">Vendedores</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Entrar</a></li>
+
+            </ul>
+        </nav>
+        <input type="text" class="barra-pesquisa" placeholder="Buscar produtos...">
+    </header>
+
+    <main>
+        <section class="sobre-contato">
+            <h2>Sobre Nós</h2>
+            <p>
+                O Bazar Angola é uma plataforma online dedicada a conectar compradores e vendedores de produtos diversos em Angola. 
+                Nosso objetivo é facilitar a compra e venda de produtos com segurança, praticidade e confiança. 
+                Oferecemos uma ampla variedade de produtos, desde eletrônicos até livros e ferramentas, tudo em um só lugar.
+            </p>
+        </section>
+
+        <section class="formulario-contato">
+            <h2>Entre em Contacto</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <input type="text" placeholder="Assunto" required>
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+                <div id="mensagem-sucesso" class="mensagem-sucesso" style="display: none;">
+                    Mensagem enviada com sucesso!
+                </div>
+                <form id="form-contato">
+                    <!-- ... campos existentes ... -->
+        </section>
+
+        <section class="informacoes-contato">
+            <h2>Informações de Contacto</h2>
+            <ul>
+                <li><strong>Email:</strong> contacto@bazarangola.com</li>
+                <li><strong>Telefone:</strong> +244 923 456 789</li>
+                <li><strong>Endereço:</strong> São Luís, Huambo, Angola</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bazar Angola. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
